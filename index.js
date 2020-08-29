@@ -21,7 +21,7 @@ if(arg.length == 0){
       exit(1);
     }
     console.log("    Connecting...");
-    https.get("https://library.obratnaya.repl.co/" + arg[1] + ".oba",(res)=>{
+    https.get("https://library.theforarkld.repl.co/" + arg[1] + ".oba",(res)=>{
       console.log("\x1b[1A\x1b[1M\x1b[41m\x1b[30m\x1b[1m √ \x1b[m Connected!");
       if(res.statusCode != 200){
         console.log("\x1b[43m\x1b[30mERR\x1b[m Package not found!");
