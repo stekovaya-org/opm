@@ -2,4 +2,4 @@
 Obratnaya Package Manager.
 
 ## Usage
-Type `./opm h` to display usage.
+Type `./opm h` / `opm.exe h` to display usage.
