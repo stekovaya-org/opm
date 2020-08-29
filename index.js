@@ -33,8 +33,8 @@ if(arg.length == 0){
       }).on("end",()=>{
         console.log("\x1b[41m\x1b[30m\x1b[1m √ \x1b[m Done!");
         console.log(`Name    : ${arg[1]}
-Filename: ${arg[1]}.oba`);
-        fs.writeFileSync(arg[1] + ".oba",d);
+Filename: ${arg[1].split(/\/|\\/g).pop()}.oba`);
+        fs.writeFileSync(arg[1].split(/\/|\\/g).pop() + ".oba",d);
         exit(0);
       });
     }).on("error",()=>{
